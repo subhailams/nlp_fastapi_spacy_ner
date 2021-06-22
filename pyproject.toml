@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ner-service"
+version = "0.1.0"
+description = "NER Service with FastAPI and Spacy"
+authors = ["subhailams <subhailams@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spacy = "^3.0.6"
+en_core_web_sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz" }
+fastapi = "^0.65.2"
+uvicorn = "^0.14.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
